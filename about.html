@@ -1,0 +1,245 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+            <a href="index.html" class="logo pulse-animation">
+                <span class="logo-text">Satszzz</span>
+            </a>
+
+            <div class="nav-right">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            <span class="nav-icon"><i class="fas fa-home"></i></span>
+                            <span class="nav-text">Home</span>
+                            <span class="nav-underline"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link active">
+                            <span class="nav-icon"><i class="fas fa-user"></i></span>
+                            <span class="nav-text">About</span>
+                            <span class="nav-underline"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">
+                            <span class="nav-icon"><i class="fas fa-envelope"></i></span>
+                            <span class="nav-text">Contact</span>
+                            <span class="nav-underline"></span>
+                        </a>
+                    </li>
+                </ul>
+
+                <button class="dark-mode-toggle" aria-label="Toggle dark mode">
+                    <div class="toggle-switch">
+                        <div class="toggle-circle">
+                            <span class="moon-icon">🌙</span>
+                            <span class="sun-icon">☀️</span>
+                        </div>
+                    </div>
+                    <span class="toggle-text">Dark Mode</span>
+                </button>
+
+                <label for="nav-toggle" class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About Hero -->
+        <section class="hero about-hero">
+            <div class="container hero-content">
+                <h1 class="hero-title">About <span class="highlight">Me</span></h1>
+                <p class="hero-text">Frontend developer passionate about clean code, responsive design, and creating
+                    exceptional user experiences.</p>
+            </div>
+        </section>
+
+        <!-- About Content -->
+        <section class="section about-section">
+            <div class="container">
+                <div class="about-content">
+                    <article class="about-text">
+                        <h2 class="section-title">My Journey</h2>
+                        <p>I started my web development journey with the fundamentals of HTML and CSS, focusing on
+                            building clean, semantic, and accessible websites from day one.</p>
+                        <p>As I progressed, I expanded my expertise into **modern JavaScript and React**, allowing me to
+                            build dynamic, component-based user interfaces that are both efficient and scalable.</p>
+                        <p>My approach emphasizes writing maintainable code, following best practices, and staying
+                            current with modern CSS techniques like Flexbox and responsive design principles. I believe
+                            that great frontend development starts with solid foundations and attention to detail in
+                            every line of code.</p>
+                    </article>
+
+                    <div class="skills-section">
+                        <h2 class="section-title">Technical Skills</h2>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h3 class="skill-title">Core Technologies</h3>
+                                <ul class="skill-list">
+                                    <li>React & Hooks</li>
+                                    <li>Semantic HTML5</li>
+                                    <li>CSS3 & Flexbox</li>
+                                    <li>Responsive Design</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <article class="learning-journey">
+                        <h2 class="section-title">Professional Milestones</h2>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <h3 class="timeline-title">Responsive Interface Systems</h3>
+                                <p class="timeline-desc">Engineered complex, mobile-first layouts using advanced CSS
+                                    Grid and Flexbox, ensuring 100% cross-browser compatibility.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h3 class="timeline-title">Dynamic React Applications</h3>
+                                <p class="timeline-desc">Developed interactive SPAs (Single Page Applications) utilizing
+                                    React Hooks and component-driven architecture for seamless user experiences.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h3 class="timeline-title">Performance & Accessibility</h3>
+                                <p class="timeline-desc">Optimized web assets for lightning-fast load times and
+                                    implemented WCAG standards to ensure inclusive digital experiences for all users.
+                                </p>
+                            </div>
+                            <div class="timeline-item">
+                                <h3 class="timeline-title">Current Focus</h3>
+                                <p class="timeline-desc">Mastering State Management and exploring Next.js to build
+                                    production-grade, SEO-optimized web solutions.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- about.html main content -->
+    <main>
+        <!-- About Hero -->
+        <section class="hero about-hero">
+            <div class="container hero-content">
+                <div class="hero-text-wrapper">
+                    <h1 class="hero-title">
+                        <span class="hero-greeting">About</span>
+                        <span class="hero-name highlight">Me</span>
+                    </h1>
+
+                    <p class="hero-text">
+                        Passionate frontend developer specializing in creating beautiful, functional, and accessible web
+                        experiences with clean code and modern techniques.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills with Animated Progress Bars -->
+        <section class="section skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Expertise</span>
+                    <h2 class="section-title">Technical <span class="highlight">Skills</span></h2>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Skill items with animated progress -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">Satszzz</a>
+                    <p class="footer-tagline">Building beautiful web experiences with clean code</p>
+
+                    <!-- Social Links with Hover Effects -->
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                            <span class="social-tooltip">GitHub</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                            <span class="social-tooltip">LinkedIn</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                            <span class="social-tooltip">Twitter</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="CodePen">
+                            <i class="fab fa-codepen"></i>
+                            <span class="social-tooltip">CodePen</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links-group">
+                    <div class="footer-links-col">
+                        <h3 class="footer-title">Pages</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">Projects</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links-col">
+                        <h3 class="footer-title">Resources</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Tutorials</a></li>
+                            <li><a href="#">Code Snippets</a></li>
+                            <li><a href="#">Tools</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links-col">
+                        <h3 class="footer-title">Legal</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Satheeswaran B. All rights reserved.</p>
+                <div class="footer-credits">
+                    <span>Made with</span>
+                    <span class="heart-icon">❤️</span>
+                    <span>HTML & CSS</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- No JavaScript Required -->
+</body>
+
+</html>

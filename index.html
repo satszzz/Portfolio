@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satheeswaran | Frontend Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Animated Background Elements -->
+    <div class="bg-animation">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+        <div class="circle circle-4"></div>
+    </div>
+
+    <!-- Header with Hover Effects -->
+    <header class="header">
+        <nav class="nav container">
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+            <a href="index.html" class="logo pulse-animation">
+                <span class="logo-text">Satszzz</span>
+            </a>
+
+            <div class="nav-right">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">
+                            <span class="nav-icon"><i class="fas fa-home"></i></span>
+                            <span class="nav-text">Home</span>
+                            <span class="nav-underline"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">
+                            <span class="nav-icon"><i class="fas fa-user"></i></span>
+                            <span class="nav-text">About</span>
+                            <span class="nav-underline"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">
+                            <span class="nav-icon"><i class="fas fa-envelope"></i></span>
+                            <span class="nav-text">Contact</span>
+                            <span class="nav-underline"></span>
+                        </a>
+                    </li>
+                </ul>
+
+                <button class="dark-mode-toggle" aria-label="Toggle dark mode">
+                    <div class="toggle-switch">
+                        <div class="toggle-circle">
+                            <span class="moon-icon">🌙</span>
+                            <span class="sun-icon">☀️</span>
+                        </div>
+                    </div>
+                    <span class="toggle-text">Dark Mode</span>
+                </button>
+
+                <label for="nav-toggle" class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section with Parallax Effect -->
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text-wrapper">
+                    <h1 class="hero-title typing-animation">
+                        <span class="hero-greeting">Hello, I'm</span>
+                        <span class="hero-name highlight">Satheeswaran B</span>
+                    </h1>
+
+                    <h2 class="hero-subtitle">
+                        <span class="role-text">Frontend Developer</span>
+                        <span class="role-cursor">|</span>
+                    </h2>
+
+                    <p class="hero-text">
+                        I create <span class="highlight-text">beautiful</span>, <span
+                            class="highlight-text">responsive</span>, and
+                        <span class="highlight-text">accessible</span> web experiences using modern HTML & CSS.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary btn-glow">
+                            <span class="btn-text">View My Work</span>
+                            <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                            <span class="btn-shine"></span>
+                        </a>
+
+                        <a href="contact.html" class="btn btn-outline btn-bounce">
+                            <span class="btn-text">Get In Touch</span>
+                            <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                        </a>
+                    </div>
+
+                    <!-- Animated Stats -->
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="">20</div>
+                            <div class="stat-label">Projects Built</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="">25+</div>
+                            <div class="stat-label">CSS Files</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="">10</div>
+                            <div class="stat-label">Weeks Learning</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-placeholder">
+                        <div class="image-shape">
+                            <div class="shape-inner">
+                                <div class="shape-content">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-decoration">
+                            <div class="decoration-item deco-1"></div>
+                            <div class="decoration-item deco-2"></div>
+                            <div class="decoration-item deco-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <a href="#projects" class="scroll-indicator">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <span class="scroll-text">Scroll Down</span>
+            </a>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">My Work</span>
+                    <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+                    <p class="section-subtitle">Each project showcases clean code, responsive design, and attention to
+                        detail</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 with Hover Effect -->
+                    <article class="project-card card-hover">
+                        <div class="project-image">
+                            <div class="image-overlay">
+                                <span class="view-project">View Project</span>
+                            </div>
+                            <div class="project-badge">New</div>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">Flexbox</span>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+                            <h3 class="project-title">Modern E-Commerce Website</h3>
+                            <p class="project-description">
+                                A fully responsive e-commerce site with semantic HTML, CSS Grid, and mobile-first
+                                approach. Features product filtering and accessible navigation.
+                            </p>
+
+                            <div class="project-features">
+                                <div class="feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>100% Responsive</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>WCAG Accessible</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Semantic Markup</span>
+                                </div>
+                            </div>
+
+                            <a href="#" class="project-link">
+                                <span>View Case Study</span>
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 with Hover Effect -->
+                    <article class="project-card card-hover">
+                        <div class="project-image">
+                            <div class="image-overlay">
+                                <span class="view-project">View Project</span>
+                            </div>
+                            <div class="project-tags">
+                                <span class="tag">CSS Animations</span>
+                                <span class="tag">Forms</span>
+                                <span class="tag">Accessibility</span>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+                            <h3 class="project-title">Interactive Dashboard UI</h3>
+                            <p class="project-description">
+                                Clean dashboard interface with animated charts, interactive components, and a
+                                comprehensive form system with validation.
+                            </p>
+
+                            <div class="project-features">
+                                <div class="feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>CSS Animations</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Form Validation</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Dark/Light Mode</span>
+                                </div>
+                            </div>
+
+                            <a href="#" class="project-link">
+                                <span>View Case Study</span>
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 with Hover Effect -->
+                    <article class="project-card card-hover">
+                        <div class="project-image">
+                            <div class="image-overlay">
+                                <span class="view-project">View Project</span>
+                            </div>
+                            <div class="project-badge">Popular</div>
+                            <div class="project-tags">
+                                <span class="tag">Portfolio</span>
+                                <span class="tag">Responsive</span>
+                                <span class="tag">Modern CSS</span>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+                            <h3 class="project-title">Developer Portfolio Template</h3>
+                            <p class="project-description">
+                                A professional portfolio template with smooth animations, project showcase, and contact
+                                form. Built with pure CSS animations.
+                            </p>
+
+                            <div class="project-features">
+                                <div class="feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Smooth Animations</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Mobile-First</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>SEO Optimized</span>
+                                </div>
+                            </div>
+
+                            <a href="#" class="project-link">
+                                <span>View Case Study</span>
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- View All Projects Button -->
+                <div class="section-footer">
+                    <a href="#" class="btn btn-secondary btn-loading">
+                        <span class="btn-text">View All Projects</span>
+                        <span class="btn-icon"><i class="fas fa-arrow-down"></i></span>
+                        <span class="loading-dots">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section with Animated Accordion -->
+        <section class="section faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">FAQ</span>
+                    <h2 class="section-title">Frequently Asked <span class="highlight">Questions</span></h2>
+                    <p class="section-subtitle">Common questions about my work, process, and services</p>
+                </div>
+
+                <div class="faq-container">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item">
+                        <input type="checkbox" id="faq1" class="faq-toggle">
+                        <label for="faq1" class="faq-question">
+                            <span class="faq-number">01</span>
+                            <span class="faq-text">What technologies do you specialize in?</span>
+                            <span class="faq-icon">
+                                <i class="fas fa-plus"></i>
+                                <i class="fas fa-minus"></i>
+                            </span>
+                        </label>
+                        <div class="faq-answer">
+                            <p>I specialize in frontend fundamentals with a focus on semantic HTML5, modern CSS3
+                                (Flexbox, Grid, Animations), responsive design principles, and web accessibility
+                                standards (WCAG).</p>
+                            <p>My approach emphasizes clean, maintainable code that performs well across all devices and
+                                browsers.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item">
+                        <input type="checkbox" id="faq2" class="faq-toggle">
+                        <label for="faq2" class="faq-question">
+                            <span class="faq-number">02</span>
+                            <span class="faq-text">What is your development process?</span>
+                            <span class="faq-icon">
+                                <i class="fas fa-plus"></i>
+                                <i class="fas fa-minus"></i>
+                            </span>
+                        </label>
+                        <div class="faq-answer">
+                            <p>I follow a structured mobile-first, responsive workflow:</p>
+                            <ol>
+                                <li>Planning and semantic HTML structure</li>
+                                <li>Mobile-first CSS with reusable utility classes</li>
+                                <li>Responsive enhancements for tablet and desktop</li>
+                                <li>Cross-browser testing and accessibility checks</li>
+                                <li>Performance optimization and final review</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item">
+                        <input type="checkbox" id="faq3" class="faq-toggle">
+                        <label for="faq3" class="faq-question">
+                            <span class="faq-number">03</span>
+                            <span class="faq-text">Do you build accessible websites?</span>
+                            <span class="faq-icon">
+                                <i class="fas fa-plus"></i>
+                                <i class="fas fa-minus"></i>
+                            </span>
+                        </label>
+                        <div class="faq-answer">
+                            <p>Yes, accessibility is a core principle in all my projects. I implement:</p>
+                            <ul>
+                                <li>Semantic HTML structure for screen readers</li>
+                                <li>Keyboard navigation support</li>
+                                <li>ARIA labels and roles where needed</li>
+                                <li>Sufficient color contrast ratios</li>
+                                <li>Focus indicators for interactive elements</li>
+                                <li>Responsive typography and spacing</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item">
+                        <input type="checkbox" id="faq4" class="faq-toggle">
+                        <label for="faq4" class="faq-question">
+                            <span class="faq-number">04</span>
+                            <span class="faq-text">How can I contact you for a project?</span>
+                            <span class="faq-icon">
+                                <i class="fas fa-plus"></i>
+                                <i class="fas fa-minus"></i>
+                            </span>
+                        </label>
+                        <div class="faq-answer">
+                            <p>You can reach me through the contact form on this website or email me directly. I
+                                typically respond to project inquiries within 24 hours.</p>
+                            <p>For urgent matters, please indicate "URGENT" in your subject line. I'm currently
+                                available for new projects and collaborations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-card">
+                    <div class="cta-content">
+                        <h2 class="cta-title">Ready to Start Your Project?</h2>
+                        <p class="cta-text">Let's create something amazing together. Get in touch to discuss your ideas.
+                        </p>
+                        <a href="contact.html" class="btn btn-primary btn-pulse">
+                            <span class="btn-text">Contact Me Now</span>
+                            <span class="btn-icon"><i class="fas fa-rocket"></i></span>
+                            <span class="pulse-ring"></span>
+                            <span class="pulse-ring"></span>
+                            <span class="pulse-ring"></span>
+                        </a>
+                    </div>
+                    <div class="cta-image">
+                        <div class="cta-shape">
+                            <div class="cta-content">
+                                <span class="cta-icon"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Enhanced Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">Satszzz</a>
+                    <p class="footer-tagline">Building beautiful web experiences with clean code</p>
+
+                    <!-- Social Links with Hover Effects -->
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                            <span class="social-tooltip">GitHub</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                            <span class="social-tooltip">LinkedIn</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                            <span class="social-tooltip">Twitter</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="CodePen">
+                            <i class="fab fa-codepen"></i>
+                            <span class="social-tooltip">CodePen</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links-group">
+                    <div class="footer-links-col">
+                        <h3 class="footer-title">Pages</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">Projects</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links-col">
+                        <h3 class="footer-title">Resources</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Tutorials</a></li>
+                            <li><a href="#">Code Snippets</a></li>
+                            <li><a href="#">Tools</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links-col">
+                        <h3 class="footer-title">Legal</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Satheeswaran B. All rights reserved.</p>
+                <div class="footer-credits">
+                    <span>Made with</span>
+                    <span class="heart-icon">❤️</span>
+                    <span>HTML & CSS</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- No JavaScript Required -->
+</body>
+
+</html>
