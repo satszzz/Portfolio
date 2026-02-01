@@ -44,7 +44,9 @@ A clean, modern, and fully responsive portfolio website built using HTML and CSS
 
 ---
 
-## how to run it locally
-   1.Clone the repository from GitHub.
-   2.Open the project folder in Visual Studio Code.
-   3.Open index.html using Live Server or any web browser.
+## ▶️ How to Run It Locally
+
+1. Clone the repository from GitHub.
+2. Open the project folder in Visual Studio Code.
+3. Open `index.html` using Live Server or any web browser.
+
